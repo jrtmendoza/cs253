@@ -10,8 +10,8 @@ $ git clone https://github.com/jrtmendoza/cs253.git
 
 3. Execute the cs253-encrypt
  
-$ bash ./cs253-encrypt
+$ bash ./cs253-encrypt.sh
 
 The script requires Internet connectivity to successfully run. Two directories will be created on the same directory where the script is invoked. The first routine in the script will download the LENA image from a remote URL.   
 
-
+4. Verify the correctness of the encryption procedure by running ./cs253-check.sh
