@@ -21,14 +21,16 @@ if [ ! -f ${LENA_ecb} ] ; then
      printf "Encrypting LENA image with AES-128-ECB...\n"
      openssl enc -aes-128-ecb -e -in ${LENA} -out ${LENA_ecb} -K ${AES_KEY}
      printf "\$ openssl enc -aes-128-ecb -e -in ${LENA} -out ${LENA_ecb} -K ${AES_KEY}\n"
+     file ${LENA} ${LENA_ecb}
      printf "DONE.\n\n"
 fi 
 
 # Perform symmetric encryption using AES-128-CBC on the image
 if [ ! -f ${LENA_cbc} ] ; then 
      printf "Encrypting LENA image with AES-128-CBC...\n"
-     openssl enc -aes-128-cbc -e -in ${LENA} -out ${LENA_cbc} -K ${AES_KEY} -iv ${AES_IV}
      printf "\$ openssl enc -aes-128-cbc -e -in ${LENA} -out ${LENA_cbc} -K ${AES_KEY} -iv ${AES_IV}\n"
+     openssl enc -aes-128-cbc -e -in ${LENA} -out ${LENA_cbc} -K ${AES_KEY} -iv ${AES_IV}
+     file ${LENA} ${LENA_cbc}
      printf "DONE.\n\n"
 fi 
 
