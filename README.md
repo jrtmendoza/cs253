@@ -13,6 +13,6 @@ cd cs253 ; ./make clean
  
 $ bash ./cs253-encrypt.sh
 
-The script requires Internet connectivity to run. Two directories will be created on the same directory where the script is called. The first routine will download the LENA image from a remote URL and execute the commands needed for the OpenSSL exercises specified in the project requirements. 
+The script requires Internet connectivity to run. Two directories will be created on the same directory where the script is called. The first routine will download the LENA image from a remote URL and execute the commands needed for the OpenSSL exercises specified in the project requirements.  The code is written in bash and tested on Ubuntu 16.04 64-bit Desktop. The routines in the script make use of other command line tools aside from OpenSSL to perform some verification functions. 
 
 4. Verify the correctness of the encryption procedure by running ./cs253-check.sh
