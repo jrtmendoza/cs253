@@ -5,7 +5,10 @@ Code repository for the final project on CS253 Computer Security handled by Dr. 
 
 $ git clone https://github.com/jrtmendoza/cs253.git
 
-2. Set up the environment by executing first ./make 
+2. Set up the working directory
+
+cd cs253
+./make clean
 
 3. Execute the cs253-encrypt
  
